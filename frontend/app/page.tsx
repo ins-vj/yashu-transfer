@@ -8,6 +8,7 @@ import FeaturedAuctions from "@/app/components/featured-auctions"
 import CategoryList from "@/app/components/category-list"
 import HowItWorks from "@/app/components/how-it-works"
 import Testimonials from "@/app/components/testimonials"
+import ActionsSection from "@/app/components/why"
 import Globe from "./spline/globe"
 // import { useAuth } from "./context/AuthProvider"
 import { AuthButtons } from "./components/AuthButtons"
@@ -91,90 +92,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <ActionsSection />
       {/* Decentralized Features */}
-      <section className="py-12 bg-gray-50 dark:bg-gray-900 z-2">
-        <div className="px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Why Decentralized?</h2>
-              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Experience the benefits of blockchain-powered auctions.
-              </p>
-            </div>
-          </div>
-          <div className="mx-auto mt-8 grid max-w-5xl gap-6 sm:grid-cols-2 md:grid-cols-3">
-            <div className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 p-6 dark:border-gray-800">
-              <div className="rounded-full bg-rose-100 p-3 dark:bg-rose-900/30">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-6 w-6 text-rose-600 dark:text-rose-400"
-                >
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold">Lower Fees</h3>
-              <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                Pay just 5% in platform fees, half of what traditional auction sites charge.
-              </p>
-            </div>
-            <div className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 p-6 dark:border-gray-800">
-              <div className="rounded-full bg-rose-100 p-3 dark:bg-rose-900/30">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-6 w-6 text-rose-600 dark:text-rose-400"
-                >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold">Enhanced Security</h3>
-              <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                Smart contracts ensure secure transactions without relying on third-party intermediaries.
-              </p>
-            </div>
-            <div className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 p-6 dark:border-gray-800">
-              <div className="rounded-full bg-rose-100 p-3 dark:bg-rose-900/30">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-6 w-6 text-rose-600 dark:text-rose-400"
-                >
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-                  <circle cx="12" cy="12" r="3" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold">Full Transparency</h3>
-              <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                All bids and transactions are recorded on the blockchain and publicly verifiable.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Featured Auctions */}
       <FeaturedAuctions />
